@@ -9,8 +9,6 @@ position: absolute;
 top:63%;
 left: 52%;
 transform: translate(-50%, -50%);
-
-
 }
 .capitalize{
 text-transform: uppercase;
@@ -18,4 +16,15 @@ text-transform: uppercase;
 .mouse_click{
 padding-top: 8rem;
 margin-top: 8rem;
+}
+.services {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+.services-content {
+position: absolute;
+top:37%;
+left: 52%;
+transform: translate(-50%, -50%);
 }
