@@ -38,11 +38,12 @@ transform: translate(-50%, -50%);
     color: white;
   }
 .contact-us-content {
-position: absolute;
-top:50%;
-left: 50%;
-transform: translate(-50%, -50%);
-}
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+  }
 .myitem{
     background:transparent !important;
     color: #fff !important;
@@ -56,5 +57,36 @@ transform: translate(-50%, -50%);
   margin-bottom: 0px !important;
 }
 .designContent,.devContent,.prodContent{
+  display: none;
+}
+.portfolio{
+  position: relative;
+}
+.portfolioName{
+  background: transparent;
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: bold;
+  z-index: 1;
+  color:#fff;
+
+}
+.hide{
+  display: none;
+}
+
+#wb_Image0,#wb_Image3,#wb_Image2,#wb_Image1,#wb_Image4,#wb_Image5,#wb_Image6,#wb_Image7,#wb_Image8{
+  position: relative;
+}
+.text0,.text1,.text2,.text3,.text4,.text5,.text6,.text7,.text8{
+  font-weight: bold;
+  z-index: 1;
+  position: absolute;
+  left:25%;
+  top: 40%;
+}
+.hide {
   display: none;
 }
