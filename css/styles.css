@@ -55,3 +55,6 @@ transform: translate(-50%, -50%);
 .footer p{
   margin-bottom: 0px !important;
 }
+.designContent,.devContent,.prodContent{
+  display: none;
+}
