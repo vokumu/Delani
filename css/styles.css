@@ -1,3 +1,7 @@
+body{
+  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+}
 .slider {
     position: relative;
     text-align: center;
@@ -47,4 +51,7 @@ transform: translate(-50%, -50%);
 
 .imgs{
     padding: 20px;
+}
+.footer p{
+  margin-bottom: 0px !important;
 }
