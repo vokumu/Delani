@@ -1,7 +1,7 @@
-# Akan Naming Application 
+# Delani  Studio 
 ---
 ## Project Description
-This is a simple web application that uses ones Date, Month and Year of birth to determine the day of the week when someone was born.It goes a step further depending on the users gender and the day of the week bord determine their Akan i.e Ghanian Name. 
+Delani Studios is a  simple landing page of Delani studio company an IT firm that offers solutions IT solutions. 
 
 ## Author Information
 [Victoria Okumu](https://github.com/vokumu)
@@ -9,13 +9,13 @@ This is a simple web application that uses ones Date, Month and Year of birth to
 ## Setup Instructions  
 To start using this project use the following commands:
 
-- `git clone https://github.com/vokumu/akan.git`
+- `git clone https://github.com/vokumu/Delani.git`
 - `cd hello-world`
 - `atom .`
 - `code .` [//]: # (this is if Visual Studio Code is your preferred text editor)
 
 ## View Site
-[View site](https://vokumu.github.io/akan/)
+[View site](https://vokumu.github.io/Delani/)
 
 ## Technologies Used 
         *HTML
