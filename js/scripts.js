@@ -1,4 +1,37 @@
 $(document).ready(function() {
+
+  $("#basic-form").validate({
+    errorClass: "error fail-alert",
+    validClass: "valid success-alert",
+    rules: {
+    name : {
+    required: true,
+    minlength: 3
+    },
+    email: {
+    required: true,
+    email: true
+    },
+    message: {
+      required: true,
+      email: true
+      }
+    },
+    messages : {
+      name: {
+         required: "Name is required",
+         minlength: "Name should be at least 3 characters"
+      },
+      email: {
+          required: "Email is required",
+          email: "The email should be in the format: abc@domain.tld"
+      },
+      message: {
+          required: "Message is required",
+      }
+      }
+    });
+
     $(".design").click(function() {
       $(".desingImg").toggle();
       $(".designContent").toggle();
@@ -115,15 +148,21 @@ $('#wb_Image7 a img').hover(function () {
 
 });
 
-function validateform(){  
-  var name=document.myform.name.value;  
-  var password=document.myform.password.value;  
-    
-  if (name==null || name==""){  
-    alert("Name can't be blank");  
+function validateform(nameId,emailId,messageId){  
+  var atposition=emailId.indexOf("@");  
+  var dotposition=emailId.lastIndexOf(".");  
+  if (atposition<1 || dotposition<atposition+2 || dotposition+2>=x.length){  
+    alert("Please enter a valid e-mail address \n atpostion:"+atposition+"\n dotposition:"+dotposition);  
     return false;  
-  }else if(password.length<6){  
-    alert("Password must be at least 6 characters long.");  
-    return false;  
-    }  
   }  
+ else if (typeof nameId !== 'string'){  
+    alert("Name has to be  string like john");  
+    return false; 
+  } 
+  else if(messageId === 'Your message here...'){
+
+    alert("You have not entered a Valid Message");  
+    return false; 
+
+  }
+}  

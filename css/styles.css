@@ -90,3 +90,12 @@ transform: translate(-50%, -50%);
 .hide {
   display: none;
 }
+
+label.error.fail-alert {
+  line-height: 1;
+  color: red;
+  padding: 2px 0 6px 6px;
+  }
+  input.valid.success-alert {
+  color: green;
+  }

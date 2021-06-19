@@ -13,6 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
     <!--JS-->
     <script src="js/jquery-3.6.0.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/scripts.js"></script>
 </head>
@@ -158,30 +159,30 @@
             <img src="images/backgrounds/c_image.jpg" alt=""/>
             <div class="contact-us-content container">
                 <h1 class="capitalize">Contact Us</h1>
-                <form>
+                <form id="basic-form">
                     <div class="row pb-5 pt-3">
                         <div class="col-6">
                             
                             <div class="form-group">
-                                <input type="text" class="form-control myitem" id="nameId" placeholder="Name..." required>
+                                <input type="text" class="form-control myitem" id="nameId" name="name" placeholder="Name..." required>
                               </div>
                         </div>
                         <div class="col-6">
                             <div class="form-group">
-                                <input type="email" class="form-control myitem" id="emailId" placeholder="Email..." required> 
+                                <input type="email" class="form-control myitem" id="emailId" name="email" placeholder="Email..." required> 
                               </div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="pb-5">
                             <div class="form-group">
-                                <textarea class="form-control myitem" id="message"  rows="10" placeholder="Your message here..." required></textarea>
+                                <textarea class="form-control myitem" id="messageId"  rows="10" name="message" placeholder="Your message here..." required></textarea>
                               </div>
                         </div>
                     </div>
                     <div class="row">
                       <div class="col-3">
-                        <input type="submit" value="Submit" class="btn btn-primary"/>
+                        <input type="submit" value="Send Message" class="btn btn-primary btn-lg"/>
                       </div>
                     </div>
                 </form>
