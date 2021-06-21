@@ -1,32 +1,31 @@
 $(document).ready(function() {
 
-  $("#basic-form").validate({
+  $("#mc-embedded-subscribe-form").validate({
     errorClass: "error fail-alert",
     validClass: "valid success-alert",
     rules: {
-    name : {
+    NAME : {
     required: true,
     minlength: 3
     },
-    email: {
+    EMAIL: {
     required: true,
     email: true
     },
-    message: {
-      required: true,
-      email: true
+    MESSAGE: {
+      required: true
       }
     },
     messages : {
-      name: {
+      NAME: {
          required: "Name is required",
          minlength: "Name should be at least 3 characters"
       },
-      email: {
+      EMAIL: {
           required: "Email is required",
           email: "The email should be in the format: abc@domain.tld"
       },
-      message: {
+      MESSAGE: {
           required: "Message is required",
       }
       }
